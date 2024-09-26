@@ -3,7 +3,7 @@ import argparse
 
 from dotenv import load_dotenv
 
-load_dotenv('../.env')  # for repdoducibility change to ../env.env
+load_dotenv('../.env')
 
 import openai
 import pandas as pd

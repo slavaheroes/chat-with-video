@@ -3,7 +3,7 @@ import re
 
 from dotenv import load_dotenv
 
-load_dotenv('../.env')  # for repdoducibility change to ../env.env
+load_dotenv('../.env')
 
 import json
 from typing import Dict, List, Tuple
