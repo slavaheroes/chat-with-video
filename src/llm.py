@@ -36,23 +36,6 @@ Retrieved Transcripts:
 Answer the question as accurately as possible.
 '''
 
-JUDGE_PROMPT = '''
-You are an impartial AI judge tasked with evaluating the quality and accuracy of an AI assistant's response to a user query.
-1. User question: {user_question}
-2. LLM Answer: {llm_answer}
-3. Retrieved Context: {context}
-
-Your task is to evaluate the LLM Answer and Retrieved Context based on the Relevance.
-Answer in the following format:
- - relevance_score: An integer from 1-5 (1 being completely irrelevant, 5 being highly relevant)
- - explanation: A concise string explaining your scores and suggesting improvements. Keep this under 200 words.
-
-You must provide your evaluation in the following JSON format:
-{{"answer_relevance_score": <int>,
-"context_relevance_score": <int>,
-"explanation": "<string>"}}
-'''
-
 
 def get_response(user_query, context, metadata):
     transcript = '\n'.join([item['text'] for item in context])

@@ -74,9 +74,8 @@ def create_tables():
             id SERIAL PRIMARY KEY,
             conversation_id TEXT,
             question_id TEXT,
-            question TEXT,
-            answer_relevance INT,
-            context_relevance INT,
+            answer_relevance_score INT,
+            context_relevance_score INT,
             explanation TEXT,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
