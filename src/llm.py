@@ -58,7 +58,7 @@ def get_response(user_query, context, metadata):
     )
 
     # gpt-4o-mini fixed
-    cost = (0.15 * llm_response.usage.prompt_tokens + 0.06 * llm_response.usage.completion_tokens) / 1000
+    cost = (0.0015 * llm_response.usage.prompt_tokens + 0.06 * llm_response.usage.completion_tokens) / 1000
 
     return {
         **metadata,

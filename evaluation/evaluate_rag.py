@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
     for llm in ['haiku', 'gpt4o_mini']:
         for video_name in ['SamAltman_interview']:  # VIDEOS.keys(): -> to save money and time
-            df = pd.read_csv(f'data/{video_name}_gt.csv')
+            df = pd.read_csv(f'../data/{video_name}_gt.csv')
 
             # create rag
             documents = []

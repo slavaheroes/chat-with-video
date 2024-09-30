@@ -182,7 +182,7 @@ if __name__ == '__main__':
     for method in ['hybrid_es', 'default_es', 'tf_idf', 'custom_vdb']:
 
         for key in VIDEOS.keys():
-            df_path = f'data/{key}_gt.csv'
+            df_path = f'../data/{key}_gt.csv'
             df = pd.read_csv(df_path)
 
             logger.info(f'Evaluating {key} with method {method}')

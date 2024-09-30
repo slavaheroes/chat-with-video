@@ -156,7 +156,7 @@ if __name__ == '__main__':
                     continue
 
             data = pd.DataFrame(data)
-            data.to_csv(f'data/{video_name}_gt.csv', index=False)
+            data.to_csv(f'../data/{video_name}_gt.csv', index=False)
 
             logger.success(f"Data saved for video: {video_name}")
 
